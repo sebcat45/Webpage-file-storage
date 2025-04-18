@@ -1,46 +1,97 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crawford Plumbing</title>
-    <link rel="stylesheet" type="text/css" href="./styles-plumbing.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
-
 <body>
-    <div id="header">
-        <img src="./Crawfordplumb_bria.png" alt="Crawford Plumbing">
-        <div>
-            <h1>Crawford Plumbing</h1>
-            <h2>About Us</h2>
-        </div>
+    <div class="white-box title">Crawford Plumbing</div>
+
+    <div class="grey-box">
+        <a href="mailto:crawfordtheplumber@gmail.com" target="_blank">
+            <img src="image1.jpg" alt="Image 1">
+        </a>
+        <a href="tel:7059853440" target="_blank">
+            <img src="image3.jpg" alt="Image 2">
+        </a>
     </div>
-    <div id="container">
-        <div id="sidebar">
-            <a href="#">Pictures</a>
-            <a href="./Addon-Info.html">Additional Info</a>
-            <a href="./Contact.html">Contact us</a>
-            <a href="https://www.instagram.com/crawford.plumbing">Instagram</a>
-            <a href="https://www.facebook.com/people/Crawford-Plumbing/100085653092240/">Facebook</a>
-            <a href="mailto:crawfordtheplumber@gmail.com">Email</a>
-            <a href="tel:17059853440">Phone</a>
-        </div>
-        <div id="content">
-            <h3>Meet Crawford Plumbing</h3>
-            <p>Our aim has been to provide you with expert service, honest estimates, and helpful consultations. 
-                From professional guidance to long-lasting work, our kind and knowledgeable staff is here to help you every step of the way, 
-                because we know what it's like to be in your shoes.</p>
-            <p>At Crawford Plumbing, we make sure your needs come first and offer a variety of top-quality services and plans. 
-                Our main goal is to take care of everything from the very beginning, bringing you exceptional results.</p>
-        </div>
+
+    <div class="large-photo">
+        <img src="large-image.jpg" alt="Large Photo">
     </div>
-    <div id="footer">
-        &copy; 2025 Sebby C | All Rights Reserved<br>
-        Last updated 2025-04-17 14:03
+
+    <div class="white-box">
+        <img src="medium-image.jpg" alt="Medium Photo">
+        <p>Text describing the image.</p>
     </div>
+
+    <div class="half-half">
+        <div class="text-section">Text content here</div>
+        <div class="image-section"><img src="half-image.jpg" alt="Half and Half"></div>
+    </div>
+
+    <div class="white-box">
+        <form id="contact-form">
+            <h2>Contact Us</h2>
+        
+            <label for="fullname">Full Name *</label>
+            <input 
+                type="text" 
+                id="fullname" 
+                name="fullname" 
+                placeholder="John Smith" 
+                minlength="5" 
+                required
+            >
+        
+            <label for="phone">Phone *</label>
+            <input 
+                type="tel" 
+                id="phone" 
+                name="phone" 
+                placeholder="555-555-5555" 
+                pattern="^\d{3} \d{3} \d{4}$" 
+                required
+            >
+        
+            <label for="email">Email</label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="johnsmith@email.com" 
+                required
+            >
+        
+            <label for="message">Write a message *</label>
+            <textarea 
+                id="message" 
+                name="message" 
+                placeholder="Type message..." 
+                minlength="10" 
+                maxlength="200" 
+                required
+            ></textarea>
+        
+            <div class="button-wrapper">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="photo-section">
+        <img src="bottom-photo.jpg" alt="Bottom Image">
+    </div>
+
+    <div class="white-box">
+        <p>Some text here</p>
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.jpg" alt="Image 3">
+    </div>
+
+    <script src="script.js"></script>
 </body>
-
-</html>
-
 </html>
