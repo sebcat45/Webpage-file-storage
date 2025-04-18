@@ -25,7 +25,6 @@
                     document.getElementById('catsCount').innerText = data.catsnum;
                     document.getElementById('errCount').innerText = data.errnum;
                     document.getElementById('uptime').innerText = `${data.hours}H:${data.mins}M:${data.seconds}S`;
-                    document.getElementById('temperature').innerText = `${data.chiptempc.toFixed(2)}°C`; // Processor temperature
                 })
                 .catch(error => console.error('Error fetching data:', error));
         }
@@ -40,6 +39,5 @@
     <p>Times Cat Pics accessed: <span id="catsCount">Loading...</span></p>
     <p>Times 404'd: <span id="errCount">Loading...</span></p>
     <p>Uptime: <span id="uptime">Loading...</span></p>
-    <p>Processor temperature: <span id="temperature">Loading...</span></p> <!-- Added temperature display -->
 </body>
 </html>
