@@ -12,16 +12,8 @@
         "file": "./webpage.html"
     },
     {
-        "request": "/styles-homepage.css",
-        "file": "./_data/styles-home.css"
-    },
-    {
-        "request": "/styles-listpages.css",
-        "file": "./_data/styles-listpages.css"
-    },
-    {
-        "request": "/styles-notes.css",
-        "file": "./_data/styles-notes.css"
+        "request": "/styles.css",
+        "file": "./_data/styles.css"
     },
     {
         "request": "/webpage-cats",
